@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{beeef662-9509-cc6e-da5b-f35f43feb0e6}</ProjectGuid>
+    <ProjectGuid>{3b232999-b831-fcbc-e843-72501508e010}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -52,9 +52,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\URPTemplate\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\URPTemplate\Scripts\SimpleCameraController.cs" />
+     <Compile Include="Assets\URPTemplate\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\MoléRoule\Scripts\MenuUIManager.cs" />
+     <Compile Include="Assets\MoléRoule\Scripts\PlayerMouvement.cs" />
+     <Compile Include="Assets\MoléRoule\Scripts\IGUI.cs" />
+     <Compile Include="Assets\MoléRoule\Scripts\AtomAdd.cs" />
+     <Compile Include="Assets\MoléRoule\Scripts\HealthSystem.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Applications/Unity/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -625,83 +629,83 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Applications/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Searcher.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Searcher.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Rider.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/adryan.hauton/Desktop/MoleRoule/MoleRoule/MoléRoule/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>C:/Users/adryan.hauton/Desktop/MR/MoleRoule/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
